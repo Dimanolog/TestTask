@@ -6,7 +6,7 @@
 	<groupId>com.github.dimanolog</groupId>
 	<artifactId>test-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>test-project</name>
 	<description>test project for Spring Boot</description>
@@ -48,6 +48,11 @@
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
     </dependencies>
 
 	<build>
@@ -58,7 +63,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 </project>

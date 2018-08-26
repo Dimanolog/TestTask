@@ -1,4 +1,4 @@
-package com.github.dimanolog.testproject;
+package com.github.dimanolog.testproject.common;
 
 import org.springframework.util.StringUtils;
 
@@ -14,7 +14,6 @@ public class FileUtil {
         }
         return fileName.matches(FILE_NAME_REGEX_PATTERN);
     }
-
 
     public static String generateUniqueFileName(String fileName) {
         checkEmptyString(fileName);

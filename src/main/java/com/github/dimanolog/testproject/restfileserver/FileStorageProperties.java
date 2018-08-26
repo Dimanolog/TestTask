@@ -1,4 +1,4 @@
-package com.github.dimanolog.testproject;
+package com.github.dimanolog.testproject.restfileserver;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

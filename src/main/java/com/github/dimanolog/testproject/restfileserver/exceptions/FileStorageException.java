@@ -1,4 +1,4 @@
-package com.github.dimanolog.testproject;
+package com.github.dimanolog.testproject.restfileserver.exceptions;
 
 public class FileStorageException extends RuntimeException {
     public FileStorageException(String message) {
