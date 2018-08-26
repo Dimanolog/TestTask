@@ -25,7 +25,7 @@ public class RestApiClientService {
         if (multipartFile.isEmpty()) {
             throw new ClientServerException("File is empty");
         }
-        MultipartInputStreamFileResource fileResource = null;
+        MultipartInputStreamFileResource fileResource;
         try {
             fileResource = new MultipartInputStreamFileResource(multipartFile.getInputStream(),
                     multipartFile.getOriginalFilename());

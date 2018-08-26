@@ -3,6 +3,7 @@ package com.github.dimanolog.testproject.common;
 import org.springframework.util.StringUtils;
 
 import java.security.InvalidParameterException;
+import java.util.regex.Pattern;
 
 public class FileUtil {
     public static final String FILE_NAME_REGEX_PATTERN = "^[\\w\\- ]+\\.?[\\w]{0,5}$";
@@ -12,7 +13,9 @@ public class FileUtil {
         if (StringUtils.isEmpty(fileName)) {
             return false;
         }
-        return fileName.matches(FILE_NAME_REGEX_PATTERN);
+        return Pattern.compile(FILE_NAME_REGEX_PATTERN, Pattern.UNICODE_CHARACTER_CLASS)
+                .matcher(fileName)
+                .matches();
     }
 
     public static String generateUniqueFileName(String fileName) {
